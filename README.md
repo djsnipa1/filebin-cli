@@ -127,3 +127,21 @@ This is a Go project using [Cobra](https://github.com/spf13/cobra) for the CLI a
 nix-shell -p go    # or: install Go 1.26+
 go build -o filebin .
 ```
+
+## Releases
+
+A [GitHub Actions workflow](.github/workflows/release.yml) builds the binary for Linux, macOS, and Windows (amd64 + arm64) and attaches them to a release.
+
+### Trigger via version tag (recommended)
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+Pushing a `v*` tag automatically builds all platform binaries and creates a release with auto-generated notes.
+
+### Trigger manually
+
+From the **Actions** tab: select **Release** → **Run workflow**. An optional `tag` input can be set; if omitted, a timestamp tag (e.g. `v20260830-192500`) is used.
+
