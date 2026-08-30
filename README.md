@@ -24,6 +24,20 @@ A fast, dependency-free CLI for [Filebin](https://filebin.net) — upload, downl
 
 ## Installation
 
+### Quick install (curl)
+
+Install the latest release binary (Linux amd64) to `~/.local/bin`:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/djsnipa1/filebin-cli/main/install.sh | sh
+```
+
+> [!NOTE]
+> The script installs to `$HOME/.local/bin` by default. Override with `FILEBIN_BIN_DIR`:
+> `FILEBIN_BIN_DIR=/usr/local/bin curl -fsSL ... | sh`
+> If that directory isn't on your `PATH`, add it:
+> `echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc`
+
 ### Build from source
 
 Requires [Go](https://go.dev/dl/) 1.26+.
