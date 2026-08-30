@@ -1,6 +1,9 @@
 # Compiled binary
 /filebin
 
+# Release build output
+/dist/
+
 # Go build artifacts
 *.exe
 *.test
