@@ -1,0 +1,7 @@
+# Compiled binary
+/filebin
+
+# Go build artifacts
+*.exe
+*.test
+*.out
